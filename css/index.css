@@ -1,0 +1,30 @@
+body{
+background: black;
+color: white;
+}
+
+#banner a:link,
+#banner a:visited {
+  color: #99FF33;
+  text-decoration: none;
+}
+#banner a:hover,
+#banner a:active {
+  color: #33FFFF;
+}
+
+.th_title
+{
+  PADDING-RIGHT: 5px; 
+  PADDING-LEFT: 5px; 
+  FONT-WEIGHT: normal; 
+  PADDING-BOTTOM: 5px; 
+  WIDTH: 90px; 
+  COLOR: #99FF33; 
+  PADDING-TOP: 5px; 
+  TEXT-ALIGN: center;
+}
+a:link {color:#99ff33}//宣告連結顏色
+a:visited {color:#99ff33}//訪問過連結顏色
+a:hover {color:##33FFFF}//當滑鼠移到連結時連結顏色
+a:active {color:##33FFFF}//執行中連結顏色
