@@ -1,0 +1,9 @@
+border: 5px double rgb(109,2,107);
+width: 300px;
+height: 100px;
+align: left;
+cellpadding: 5;
+cellspacing: 5;
+frame: border;
+rules: all;
+background-color: rgb(255,255,255);

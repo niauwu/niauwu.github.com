@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Category: CSS | Niauwu鳥烏</title>
+  <title>Category: Translator Toolkit | Niauwu鳥烏</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="niauwu">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Niauwu鳥烏">
-<meta property="og:url" content="http://niauwu.com/categories/CSS/">
+<meta property="og:url" content="http://niauwu.com/categories/Translator-Toolkit/">
 <meta property="og:site_name" content="Niauwu鳥烏">
 <meta property="og:description" content="niauwu">
 <meta name="twitter:card" content="summary">
@@ -64,14 +64,14 @@
       <div class="outer">
         <section id="main">
   
-    <article id="post-howToMakeInfiniteBackground" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-howToMakeGoogleTranslateWords" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2014/06/17/howToMakeInfiniteBackground/" class="article-date">
-  <time datetime="2014-06-17T07:21:27.000Z" itemprop="datePublished">2014 6月 17</time>
+    <a href="/2014/06/16/howToMakeGoogleTranslateWords/" class="article-date">
+  <time datetime="2014-06-16T02:00:00.000Z" itemprop="datePublished">2014 6月 16</time>
 </a>
     
   <div class="article-category">
-    <a class="article-category-link" href="/categories/CSS/">CSS</a>
+    <a class="article-category-link" href="/categories/Translator-Toolkit/">Translator Toolkit</a>
   </div>
 
   </div>
@@ -82,7 +82,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2014/06/17/howToMakeInfiniteBackground/">如何製作無限循環背景</a>
+      <a class="article-title" href="/2014/06/16/howToMakeGoogleTranslateWords/">如何製作Google翻譯詞彙</a>
     </h1>
   
 
@@ -90,29 +90,52 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>本頁上方 niauwu 做的 banner 無限循環背景不錯吧!<br>讓我們來 DIY 做無限循環背景吧！</p>
-<h1 id="挑選圖片、編輯圖片">挑選圖片、編輯圖片</h1>
-<ol>
-<li>選擇一張要循環的圖片，例如一張寬 100px 的圖片。<img src="/img/originalbBackground.jpg" alt="originalbBackground.jpg"></li>
-<li>用修圖軟體把圖片寬度改成三倍，例如新增一個 300px的圖片檔，之後把圖片按照順序排列，第一張 x=0，第二張 x=100，第三張 x=200，之後把第二張水平反轉。存檔之後就變成可以無限循環的圖片了。<img src="/img/infiniteBackground.jpg" alt="infiniteBackground.jpg"></li>
+        <ol>
+<li>於Google雲端硬碟，新增Google試算表<br><img src="/img/googleHardDriveCreatNewFile.jpg" alt="Google雲端硬碟，新增檔案"></li>
+<li>重新命名標題為我的詞彙</li>
+<li>於第一列(row)輸入en    zh-TW    pos    description<ul>
+<li>en(英文)</li>
+<li>zh-TW(繁體中文)、zh-CN(簡體中文)<ul>
+<li>詳細的語言環境請參考<a href="https://support.google.com/translate/toolkit/answer/147854" target="_blank" rel="external">語言環境</a></li>
+</ul>
+</li>
+<li>pos(詞性)<ul>
+<li>noun(名詞)</li>
+<li>verb(動詞)</li>
+<li>adjective(形容詞)</li>
+<li>adverb(副詞)</li>
+<li>pronoun(代名詞)</li>
+<li>preposition(介系詞)</li>
+<li>conjunction(連接詞)</li>
+<li>interjection(感嘆詞)</li>
+</ul>
+</li>
+<li>description(詳細說明)</li>
+</ul>
+</li>
+<li>可以把第一列(row)凍結，這樣用滑鼠滾輪上下滾動檢視詞彙時，仍然可以知道這一欄位要填入什麼<ul>
+<li>檢視&gt;凍結列&gt;凍結 1 列</li>
+</ul>
+</li>
+<li>使用驗證資料限定pos(詞性)填入的資料，設定完後就可以直接下拉選單選擇該詞的詞性<ul>
+<li>選取D行(column)&gt;資料&gt;驗證&gt;條件:改成項目清單&gt;輸入noun,verb,adjective,adverb,pronoun,preposition,conjunction,interjection</li>
+<li>資料無效的處理方式：&gt;選取拒絕輸入內容</li>
+<li>外觀:&gt;勾選顯示說明&gt;輸入填入詞性</li>
+</ul>
+</li>
+<li>第二列(row)以後，就可以填入詞彙<br><img src="/img/wordsSample.jpg" alt="詞彙範例"></li>
 </ol>
-<h1 id="上CSS">上CSS</h1>
-<iframe width="100%" height="300" src="http://jsfiddle.net/naiuwu/L8cGy/7/embedded/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
-
-
-
-
-
+<p>什麼，你要多人協作編輯此詞彙？<br>那就共用吧～<br>有兩種共用方式<br>第一種知道共享網址的任何人都可以編輯<br>1.點右上角共用&gt;變更&gt;知道連結的使用者&gt;存取權:任何人(無須登入)選擇可編輯<br>第二種受到邀請的人才可以編輯<br>1.點右上角共用&gt;邀請別人:輸入被邀請者的名稱或電子郵件地址 </p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://niauwu.com/2014/06/17/howToMakeInfiniteBackground/" data-id="d47tfyn3fijoymvw" class="article-share-link">Share</a>
+      <a data-url="http://niauwu.com/2014/06/16/howToMakeGoogleTranslateWords/" data-id="0r731lr865cdwai5" class="article-share-link">Share</a>
       
-        <a href="http://niauwu.com/2014/06/17/howToMakeInfiniteBackground/#disqus_thread" class="article-comment-link">Comments</a>
+        <a href="http://niauwu.com/2014/06/16/howToMakeGoogleTranslateWords/#disqus_thread" class="article-comment-link">Comments</a>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CSS/">CSS</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Translator-Toolkit/">Translator Toolkit</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/詞彙/">詞彙</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/譯者工具包/">譯者工具包</a></li></ul>
 
     </footer>
   </div>
