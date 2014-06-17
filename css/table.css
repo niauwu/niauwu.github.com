@@ -1,9 +1,48 @@
-border: 5px double rgb(109,2,107);
-width: 300px;
-height: 100px;
-align: left;
-cellpadding: 5;
-cellspacing: 5;
-frame: border;
-rules: all;
-background-color: rgb(255,255,255);
+#css_table {
+	//我是表格;
+	display: table; 
+	//border: 1px solid white;
+	//合併邊緣;
+	border-collapse: collapse; 
+	//width: auto;
+	//border-spacing: 5px;
+	//width: 50%;
+	//margin: 10px;
+	//padding: 2px;
+}
+.css_caption{
+	//我是標題;
+	display: table-caption; 
+	text-align: center;
+	font-weight: bold;
+	font-size: larger;
+	width: auto;
+	height: auto;
+}
+.css_head{
+	//我是第一列(頭列);
+	display: table-row; 
+	text-align: center;
+	font-weight: bold;
+	font-size: larger;
+	width: auto;
+	height: auto;
+}
+.css_tr {
+	//我是列;
+    display: table-row; 
+	//border: 1px solid white;
+	width: auto;
+	//clear: both;
+}
+.css_td {
+	//我是行(欄位);
+    display: table-cell; 
+	border: 1px solid white;
+	text-align: center;
+	padding-top: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 5px;
+	//float: left;
+}

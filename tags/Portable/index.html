@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Tag: Portable | Niauwu鳥烏</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="niauwu">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Niauwu鳥烏">
+<meta property="og:url" content="http://niauwu.com/tags/Portable/">
+<meta property="og:site_name" content="Niauwu鳥烏">
+<meta property="og:description" content="niauwu">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Niauwu鳥烏">
+<meta name="twitter:description" content="niauwu">
+  
+    <link rel="alternative" href="/atom.xml" title="Niauwu鳥烏" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  
+</head>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Niauwu鳥烏</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">GrowUpInProject在項目中成長</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home首頁</a>
+        
+          <a class="main-nav-link" href="/archives">Archives檔案櫃</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><input type="submit" value="&#xF002;" class="search-form-submit"><input type="hidden" name="q" value="site:http://niauwu.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-appservPortable" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2014/06/18/appservPortable/" class="article-date">
+  <time datetime="2014-06-17T16:48:43.000Z" itemprop="datePublished">2014 6月 18</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Appserv/">Appserv</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2014/06/18/appservPortable/">Appserv 免安裝</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>appserv免安裝原來這麼簡單喔<br>AppServ免安裝有可能嗎?有可能，看以下教學<br>首先當然要有AppServ沒有的去下載吧<br>正常AppServ的目錄下有Apache2.2 and MySQL and php5 and www and Uninstall-AppServ2.5.10.exe 免安裝其實只是把Apache2.2和MySQL啟動而已啦 所以來教大家如何啟動<br>&lt;第一步&gt;:叫出cmd來，win+R輸入cmd，正常會出現C:Documents and Settings\使用者名稱&gt;<br>&lt;第二步&gt;:切換到AppServ的根目錄，假設是在D槽，輸入D:再輸入cd D:\appserv\apache2.2\bin再輸入httpd.exe -k -install就會啟動apache。<br>但是如果出現httpd.exe: Syntax error on line 56 of D:/AppServ/Apache2.2/conf/httpd.conf: ServerRoot must be a valid directory不是做錯了，是httpd.conf裡面的安裝地點和當按放的地方不一樣。<br>解決方法用記事本打開httpd.conf(檔案在apache2.2\conf裡面)，打開後Ctrl+H收尋目標輸入一開始AppServ裝的地方，假設一開始AppServ是裝在C:\AppServ，就要輸入C:/，取代為書入目前AppServ資料夾的地方，本例是在D:\AppServ，所以要輸入D:/，按全部取代，關掉記事本，是，回到cmd按鍵盤上鍵確定，如果沒反應就代表成功了，開啟流覽器在網址列輸入<a href="http://localhost/有出現網頁就成功了。" target="_blank" rel="external">http://localhost/有出現網頁就成功了。</a><br>但是cmd.exe這個程式關掉的話apache也會跟著關掉喔，所以cmd.exe不能關掉喔，當然你要把apache關掉就直接把cmd關掉就可以瞜。 至於開啟mysql的方法我還要再研究一下</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://niauwu.com/2014/06/18/appservPortable/" data-id="vsh4ygvd2x9wfm2g" class="article-share-link">Share</a>
+      
+        <a href="http://niauwu.com/2014/06/18/appservPortable/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Appserv/">Appserv</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Portable/">Portable</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+  
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories分類</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Appserv/">Appserv</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/CSS/">CSS</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/DVD/">DVD</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Excel/">Excel</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Hexo/">Hexo</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/MP3/">MP3</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Mac/">Mac</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Markdown/">Markdown</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Notepad++/">Notepad++</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Translator-Toolkit/">Translator Toolkit</a><span class="category-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags標籤</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Appserv/">Appserv</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/CD/">CD</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/CSS/">CSS</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/DIV/">DIV</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/DVD/">DVD</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Excel/">Excel</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo/">Hexo</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/MP3/">MP3</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Mac/">Mac</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Markdown/">Markdown</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Notepad++/">Notepad++</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Portable/">Portable</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Table/">Table</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Translator-Toolkit/">Translator Toolkit</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/詞彙/">詞彙</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/譯者工具包/">譯者工具包</a><span class="tag-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud標籤雲</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/Appserv/" style="font-size: 10.00px;">Appserv</a><a href="/tags/CD/" style="font-size: 10.00px;">CD</a><a href="/tags/CSS/" style="font-size: 20.00px;">CSS</a><a href="/tags/DIV/" style="font-size: 10.00px;">DIV</a><a href="/tags/DVD/" style="font-size: 10.00px;">DVD</a><a href="/tags/Excel/" style="font-size: 10.00px;">Excel</a><a href="/tags/Hexo/" style="font-size: 15.00px;">Hexo</a><a href="/tags/MP3/" style="font-size: 10.00px;">MP3</a><a href="/tags/Mac/" style="font-size: 10.00px;">Mac</a><a href="/tags/Markdown/" style="font-size: 15.00px;">Markdown</a><a href="/tags/Notepad++/" style="font-size: 10.00px;">Notepad++</a><a href="/tags/Portable/" style="font-size: 10.00px;">Portable</a><a href="/tags/Table/" style="font-size: 10.00px;">Table</a><a href="/tags/Translator-Toolkit/" style="font-size: 10.00px;">Translator Toolkit</a><a href="/tags/詞彙/" style="font-size: 10.00px;">詞彙</a><a href="/tags/譯者工具包/" style="font-size: 10.00px;">譯者工具包</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives檔案櫃</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/06">六月 2014</a><span class="archive-list-count">14</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recents最近文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2014/06/18/closeTWG/">手動刪除 TWG 多媒體教學廣播系統</a>
+          </li>
+        
+          <li>
+            <a href="/2014/06/18/appservPortable/">Appserv 免安裝</a>
+          </li>
+        
+          <li>
+            <a href="/2014/06/18/mp3CompressTest/">MP3壓縮測試</a>
+          </li>
+        
+          <li>
+            <a href="/2014/06/18/dvdBreak/">問題 TSSTCORP CDDVDW TS-L633A 無法讀取空白CD-R</a>
+          </li>
+        
+          <li>
+            <a href="/2014/06/17/cssHole/">CSS 註解挖坑給我跳</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2014 niauwu<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home首頁</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives檔案櫃</a>
+  
+</nav>
+    
+<script>
+  var disqus_shortname = 'niauwugithubcom';
+  
+  (function(){
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//go.disqus.com/count.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
+  <script src="/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
+
+
+<script src="/js/script.js" type="text/javascript"></script>
+  </div>
+</body>
+</html>
