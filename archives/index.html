@@ -64,6 +64,92 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-howToMakeInfiniteBackground" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2014/06/17/howToMakeInfiniteBackground/" class="article-date">
+  <time datetime="2014-06-17T07:21:27.000Z" itemprop="datePublished">2014 6月 17</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/CSS/">CSS</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2014/06/17/howToMakeInfiniteBackground/">如何製作無限循環背景</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>本頁上方 niauwu 做的 banner 無限循環背景不錯吧!<br>讓我們來 DIY 做無限循環背景吧！</p>
+<h1 id="挑選圖片、編輯圖片">挑選圖片、編輯圖片</h1>
+<ol>
+<li>選擇一張要循環的圖片，例如一張寬 100px 的圖片。<img src="/img/originalbBackground.jpg" alt="originalbBackground.jpg"></li>
+<li>用修圖軟體把圖片寬度改成三倍，例如新增一個 300px的圖片檔，之後把圖片按照順序排列，第一張 x=0，第二張 x=100，第三張 x=200，之後把第二張水平反轉。存檔之後就變成可以無限循環的圖片了。<img src="/img/infiniteBackground.jpg" alt="infiniteBackground.jpg"></li>
+</ol>
+<h1 id="上CSS">上CSS</h1>
+<pre><code><span class="variable">#DivID</span>{
+    background<span class="attribute">-image</span>: url(<span class="string">"images/infiniteBackground.jpg"</span>);
+    background<span class="attribute">-position</span>: <span class="number">0</span>px <span class="number">0</span>px;
+    background<span class="attribute">-repeat</span>: repeat<span class="attribute">-x</span>;
+    <span class="attribute">-webkit</span><span class="attribute">-animation</span>: move <span class="number">40</span>s linear infinite;
+    <span class="attribute">-moz</span><span class="attribute">-animation</span>: move <span class="number">40</span>s linear infinite;
+    <span class="attribute">-ms</span><span class="attribute">-animation</span>: move <span class="number">40</span>s linear infinite;
+    <span class="attribute">-o</span><span class="attribute">-animation</span>: move <span class="number">40</span>s linear infinite;
+    animation: move <span class="number">40</span>s linear infinite;  
+}
+
+offsetX<span class="subst">=</span> <span class="number">100</span>px;
+@<span class="attribute">-ms</span><span class="attribute">-keyframes</span> move {
+    from {background<span class="attribute">-position</span>:<span class="number">0</span><span class="subst">%</span> <span class="number">0</span><span class="subst">%</span>;}
+    <span class="keyword">to</span> {background<span class="attribute">-position</span>:offsetX <span class="number">0</span><span class="subst">%</span>;}
+}
+@<span class="attribute">-moz</span><span class="attribute">-keyframes</span> move {
+    from {background<span class="attribute">-position</span>:<span class="number">0</span><span class="subst">%</span> <span class="number">0</span><span class="subst">%</span>;}
+    <span class="keyword">to</span> {background<span class="attribute">-position</span>:offsetX <span class="number">0</span><span class="subst">%</span>;}
+}
+@<span class="attribute">-webkit</span><span class="attribute">-keyframes</span> move {
+    from {background<span class="attribute">-position</span>:<span class="number">0</span><span class="subst">%</span> <span class="number">0</span><span class="subst">%</span>;}
+    <span class="keyword">to</span> {background<span class="attribute">-position</span>:offsetX <span class="number">0</span><span class="subst">%</span>;}
+}
+@keyframes move {
+    from {background<span class="attribute">-position</span>:<span class="number">0</span><span class="subst">%</span> <span class="number">0</span><span class="subst">%</span>;}
+    <span class="keyword">to</span> {background<span class="attribute">-position</span>:offsetX <span class="number">0</span><span class="subst">%</span>;}
+}
+</code></pre><p>記得<code>offsetX</code>要改成一開始圖片的寬度。</p>
+<iframe width="100%" height="300" src="http://jsfiddle.net/naiuwu/L8cGy/3/embedded/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+
+
+
+
+
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://niauwu.com/2014/06/17/howToMakeInfiniteBackground/" data-id="3qhvl82anz5c1few" class="article-share-link">Share</a>
+      
+        <a href="http://niauwu.com/2014/06/17/howToMakeInfiniteBackground/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CSS/">CSS</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-fontColor" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2014/06/16/fontColor/" class="article-date">
@@ -97,7 +183,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://niauwu.com/2014/06/16/fontColor/" data-id="hqvwebh95l4mlc7d" class="article-share-link">Share</a>
+      <a data-url="http://niauwu.com/2014/06/16/fontColor/" data-id="et6s8wao5fmnzwk6" class="article-share-link">Share</a>
       
         <a href="http://niauwu.com/2014/06/16/fontColor/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -155,7 +241,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://niauwu.com/2014/06/16/hexoError/" data-id="ramow21mlfkrst58" class="article-share-link">Share</a>
+      <a data-url="http://niauwu.com/2014/06/16/hexoError/" data-id="aw7vmw1o09qdmg51" class="article-share-link">Share</a>
       
         <a href="http://niauwu.com/2014/06/16/hexoError/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -223,7 +309,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://niauwu.com/2014/06/16/howToPost/" data-id="zpuuwgp6qxkkofue" class="article-share-link">Share</a>
+      <a data-url="http://niauwu.com/2014/06/16/howToPost/" data-id="4fh1itf9aua20tnu" class="article-share-link">Share</a>
       
         <a href="http://niauwu.com/2014/06/16/howToPost/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -303,7 +389,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://niauwu.com/2014/06/16/howToMakeGoogleTranslateWords/" data-id="pkn41kauf5u5zha7" class="article-share-link">Share</a>
+      <a data-url="http://niauwu.com/2014/06/16/howToMakeGoogleTranslateWords/" data-id="klusacw2xgq5m4r1" class="article-share-link">Share</a>
       
         <a href="http://niauwu.com/2014/06/16/howToMakeGoogleTranslateWords/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -326,7 +412,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Categories分類</h3>
     <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Hexo/">Hexo</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Markdown/">Markdown</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/TranslatorToolkit譯者工具包/">TranslatorToolkit譯者工具包</a><span class="category-list-count">1</span></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/CSS/">CSS</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Hexo/">Hexo</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Markdown/">Markdown</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/TranslatorToolkit譯者工具包/">TranslatorToolkit譯者工具包</a><span class="category-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -335,7 +421,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tags標籤</h3>
     <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo/">Hexo</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Markdown/">Markdown</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Translator-Toolkit，譯者工具包/">Translator Toolkit，譯者工具包</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/post/">post</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/詞彙/">詞彙</a><span class="tag-list-count">1</span></li></ul>
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/CSS/">CSS</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo/">Hexo</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Markdown/">Markdown</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Translator-Toolkit，譯者工具包/">Translator Toolkit，譯者工具包</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/post/">post</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/詞彙/">詞彙</a><span class="tag-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -344,7 +430,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud標籤雲</h3>
     <div class="widget tagcloud">
-      <a href="/tags/Hexo/" style="font-size: 20.00px;">Hexo</a><a href="/tags/Markdown/" style="font-size: 10.00px;">Markdown</a><a href="/tags/Translator-Toolkit，譯者工具包/" style="font-size: 10.00px;">Translator Toolkit，譯者工具包</a><a href="/tags/post/" style="font-size: 10.00px;">post</a><a href="/tags/詞彙/" style="font-size: 10.00px;">詞彙</a>
+      <a href="/tags/CSS/" style="font-size: 10.00px;">CSS</a><a href="/tags/Hexo/" style="font-size: 20.00px;">Hexo</a><a href="/tags/Markdown/" style="font-size: 10.00px;">Markdown</a><a href="/tags/Translator-Toolkit，譯者工具包/" style="font-size: 10.00px;">Translator Toolkit，譯者工具包</a><a href="/tags/post/" style="font-size: 10.00px;">post</a><a href="/tags/詞彙/" style="font-size: 10.00px;">詞彙</a>
     </div>
   </div>
 
@@ -353,7 +439,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Archives檔案櫃</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/06">六月 2014</a><span class="archive-list-count">4</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/06">六月 2014</a><span class="archive-list-count">5</span></li></ul>
     </div>
   </div>
 
@@ -363,6 +449,10 @@
     <h3 class="widget-title">Recents最近文章</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2014/06/17/howToMakeInfiniteBackground/">如何製作無限循環背景</a>
+          </li>
         
           <li>
             <a href="/2014/06/16/fontColor/">如何修改 Markdown 文字顏色</a>
