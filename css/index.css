@@ -3,15 +3,6 @@ background: black;
 color: white;
 }
 
-#banner a:link,
-#banner a:visited {
-  color: #99FF33;
-  text-decoration: none;
-}
-#banner a:hover,
-#banner a:active {
-  color: #33FFFF;
-}
 
 .th_title
 {
