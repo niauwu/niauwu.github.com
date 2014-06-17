@@ -11,8 +11,7 @@
 選擇一張要循環的圖片，例如一張寬 100px 的圖片。
 用修圖軟體把圖片寬度改成三倍，例如新增一個 300px的圖片檔，之後把圖片按照順序排列，第一張 x=0，第二張 x=100，第三張 x=200，之後把第二張水平反轉。存檔之後就變成可以無限循環的圖片了。
 
-上CSS
-#D">
+上CSS">
 <meta property="og:type" content="article">
 <meta property="og:title" content="如何製作無限循環背景">
 <meta property="og:url" content="http://niauwu.com/2014/06/17/howToMakeInfiniteBackground/">
@@ -23,8 +22,7 @@
 選擇一張要循環的圖片，例如一張寬 100px 的圖片。
 用修圖軟體把圖片寬度改成三倍，例如新增一個 300px的圖片檔，之後把圖片按照順序排列，第一張 x=0，第二張 x=100，第三張 x=200，之後把第二張水平反轉。存檔之後就變成可以無限循環的圖片了。
 
-上CSS
-#D">
+上CSS">
 <meta property="og:image" content="/img/originalbBackground.jpg">
 <meta property="og:image" content="/img/infiniteBackground.jpg">
 <meta name="twitter:card" content="summary">
@@ -35,8 +33,7 @@
 選擇一張要循環的圖片，例如一張寬 100px 的圖片。
 用修圖軟體把圖片寬度改成三倍，例如新增一個 300px的圖片檔，之後把圖片按照順序排列，第一張 x=0，第二張 x=100，第三張 x=200，之後把第二張水平反轉。存檔之後就變成可以無限循環的圖片了。
 
-上CSS
-#D">
+上CSS">
   
     <link rel="alternative" href="/atom.xml" title="Niauwu鳥烏" type="application/atom+xml">
   
@@ -118,36 +115,7 @@
 <li>用修圖軟體把圖片寬度改成三倍，例如新增一個 300px的圖片檔，之後把圖片按照順序排列，第一張 x=0，第二張 x=100，第三張 x=200，之後把第二張水平反轉。存檔之後就變成可以無限循環的圖片了。<img src="/img/infiniteBackground.jpg" alt="infiniteBackground.jpg"></li>
 </ol>
 <h1 id="上CSS">上CSS</h1>
-<pre><code><span class="variable">#DivID</span>{
-    background<span class="attribute">-image</span>: url(<span class="string">"images/infiniteBackground.jpg"</span>);
-    background<span class="attribute">-position</span>: <span class="number">0</span>px <span class="number">0</span>px;
-    background<span class="attribute">-repeat</span>: repeat<span class="attribute">-x</span>;
-    <span class="attribute">-webkit</span><span class="attribute">-animation</span>: move <span class="number">40</span>s linear infinite;
-    <span class="attribute">-moz</span><span class="attribute">-animation</span>: move <span class="number">40</span>s linear infinite;
-    <span class="attribute">-ms</span><span class="attribute">-animation</span>: move <span class="number">40</span>s linear infinite;
-    <span class="attribute">-o</span><span class="attribute">-animation</span>: move <span class="number">40</span>s linear infinite;
-    animation: move <span class="number">40</span>s linear infinite;  
-}
-
-offsetX<span class="subst">=</span> <span class="number">100</span>px;
-@<span class="attribute">-ms</span><span class="attribute">-keyframes</span> move {
-    from {background<span class="attribute">-position</span>:<span class="number">0</span><span class="subst">%</span> <span class="number">0</span><span class="subst">%</span>;}
-    <span class="keyword">to</span> {background<span class="attribute">-position</span>:offsetX <span class="number">0</span><span class="subst">%</span>;}
-}
-@<span class="attribute">-moz</span><span class="attribute">-keyframes</span> move {
-    from {background<span class="attribute">-position</span>:<span class="number">0</span><span class="subst">%</span> <span class="number">0</span><span class="subst">%</span>;}
-    <span class="keyword">to</span> {background<span class="attribute">-position</span>:offsetX <span class="number">0</span><span class="subst">%</span>;}
-}
-@<span class="attribute">-webkit</span><span class="attribute">-keyframes</span> move {
-    from {background<span class="attribute">-position</span>:<span class="number">0</span><span class="subst">%</span> <span class="number">0</span><span class="subst">%</span>;}
-    <span class="keyword">to</span> {background<span class="attribute">-position</span>:offsetX <span class="number">0</span><span class="subst">%</span>;}
-}
-@keyframes move {
-    from {background<span class="attribute">-position</span>:<span class="number">0</span><span class="subst">%</span> <span class="number">0</span><span class="subst">%</span>;}
-    <span class="keyword">to</span> {background<span class="attribute">-position</span>:offsetX <span class="number">0</span><span class="subst">%</span>;}
-}
-</code></pre><p>記得<code>offsetX</code>要改成一開始圖片的寬度。</p>
-<iframe width="100%" height="300" src="http://jsfiddle.net/naiuwu/L8cGy/6/embedded/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe width="100%" height="300" src="http://jsfiddle.net/naiuwu/L8cGy/7/embedded/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 
 
@@ -157,7 +125,7 @@ offsetX<span class="subst">=</span> <span class="number">100</span>px;
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://niauwu.com/2014/06/17/howToMakeInfiniteBackground/" data-id="c2vawo08xqfap1i4" class="article-share-link">Share</a>
+      <a data-url="http://niauwu.com/2014/06/17/howToMakeInfiniteBackground/" data-id="5mhk39t691psyc4s" class="article-share-link">Share</a>
       
         <a href="http://niauwu.com/2014/06/17/howToMakeInfiniteBackground/#disqus_thread" class="article-comment-link">Comments</a>
       
