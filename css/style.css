@@ -370,6 +370,7 @@ body {
   -moz-background-size: cover;
   background-size: cover;
   z-index: -1;
+  transition: width 2s;
 }
 #header-title {
   text-align: center;
